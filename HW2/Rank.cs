@@ -13,6 +13,7 @@ using System;
 
 namespace HW2 {
 	public class Rank {
+
 		static Rank TWO;
 		static Rank THREE;
 		static Rank FOUR;
