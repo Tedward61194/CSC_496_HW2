@@ -6,7 +6,7 @@
  * abstract int CompareTo(Hand OtherHandObject): compares two hands
  * bool ContainsCard(Card): returns true if the card is in this hand, false otherwise
  * void DiscardHand(): throws away all cards in the hand, leaving an empty hand
- * int FindCard(Card): searches the hand for the first occurence of hte specified card and returns the index
+ * int FindCard(Card): searches the hand for the first occurence of the specified card and returns the index
  * Card GetCardAtIndex(int): obtains the card stored at the specified location in the hand
  * int GetNumberOfCards(): returns the number of cards in the hand
  * bool IsEmpty(): returns true if the hand is empty, false otherwise
@@ -17,48 +17,53 @@
  */
 
 using System;
+using System.Collections.Generic;
 
 namespace HW2 {
 
 	public abstract class Hand {
+		static IList<Card> hand;
 
 		public Hand () {
 		}
 
-		void AddCard(Card) {
+		public void AddCard(Card c) {
+			hand.Add (c);
 		}
 
 		abstract int CompareTo(Hand OtherHandObject) {
 		}
 
-		bool ContainsCard(Card) {
+		public bool ContainsCard(Card c) {
+			hand.Contains (c);
 		}
 
-		void DiscardHand() {
+		public void DiscardHand() {
+			hand.Clear ();
 		}
 
-		int FindCard(Card) {
+		public int FindCard(Card c) {
 		}
 
-		Card GetCardAtIndex(int) {
+		public Card GetCardAtIndex(int i) {
 		}
 
-		int GetNumberOfCards() {
+		public int GetNumberOfCards() {
 		}
 
-		bool IsEmpty() {
+		public bool IsEmpty() {
 		}
 
-		Card RemoveCard(Card) {
+		public Card RemoveCard(Card) {
 		}
 
-		Card RemoveCard(int) {
+		public Card RemoveCard(int) {
 		}
 
 		abstract int EvaluateHand() {
 		}
 
-		string ToString(){
+		public string ToString(){
 		}
 	}
 }

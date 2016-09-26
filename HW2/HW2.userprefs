@@ -1,8 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Rank.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Card.cs">
     <Files>
-      <File FileName="Rank.cs" Line="23" Column="17" />
+      <File FileName="Deck.cs" Line="1" Column="1" />
+      <File FileName="Hand.cs" Line="1" Column="1" />
+      <File FileName="Rank.cs" Line="35" Column="20" />
+      <File FileName="Suit.cs" Line="11" Column="22" />
+      <File FileName="Card.cs" Line="21" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
